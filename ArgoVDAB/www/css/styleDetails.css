@@ -1,0 +1,9 @@
+header.companyName{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 12%;
+}
+img.companyPicture{
+    padding-top: 4.5%;
+}

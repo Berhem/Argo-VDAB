@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleSaved.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Opgeslagen Vacatures</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+        <div class="list">
+
+            <a class="item item-thumbnail-left" href="details.html">
+
+                <img src="img/ibm-logo-3-620x350.jpg">
+                <i class = "icon ion-close rightX"></i>
+                <h2>Job at IBM</h2>
+                <p>IBM</p>
+                <p>Sexystreet 6969</p>
+            </a>
+
+            <a class="item item-thumbnail-left" href="details.html">
+                <img src="img/new-google-logo-official.png">
+                <i class = "icon ion-close rightX"></i>
+                <h2>Job at Google</h2>
+                <p>Google</p>
+                <p>Sexystreet 6969</p>
+            </a>
+            <a class="item item-thumbnail-left" href="details.html">
+                <img src="img/Cisco_logo.svg">
+                <i class = "icon ion-close rightX"></i>
+                <h2>Job at Cisco</h2>
+                <p>Cisco</p>
+                <p>Sexystreet 6969</p>
+            </a>
+
+
+        </div>
+    </ion-content>
+    <div class="tabs-striped tabs-color-positive">
+        <div class="tabs">
+            <a class="tab-item" href="index.html">
+                <i class="icon ion-home"></i>
+                Home
+            </a>
+            <a class="tab-item active" href="saved.html">
+                <i class="icon ion-star"></i>
+                Saved
+            </a>
+            <a class="tab-item" href="map.html">
+                <i class="icon ion-map"></i>
+                Settings
+            </a>
+            <a class="tab-item" href="social.html">
+                <i class="icon ion-person-stalker"></i>
+                Social
+            </a>
+
+            <a class="tab-item" href="settings.html">
+                <i class="icon ion-gear-a"></i>
+                Settings
+            </a>
+        </div>
+    </div>
+</ion-pane>
+</body>
+</html>

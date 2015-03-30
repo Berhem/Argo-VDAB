@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/conversation_style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+        <ion-header-bar class="bar-positive">
+            <a class="button button-icon icon ion-ios7-arrow-back" href="./social.html"></a>
+            <h1 class="title">Gesprek</h1>
+        </ion-header-bar>
+        <div class="employerheader">
+            <img class="convoavatar" src="img/doc.jpg">
+            <h1 class="convotitle">Doc. Emmet Brown</h1>
+            <h2 class="convoinfo">Emmet Brown Industries</h2>
+
+            <h2 class="convojob">Vacature: Time Traveler</h2>
+
+
+        </div>
+      <ion-content class="contentconvo">
+
+          <div class="userbubble">
+              <p class="conversation userconversation">k gimme job pls</p>
+              <a class="usertimestamp">15:36 3/4/2015</a>
+          </div>
+
+          <div class="employerbubble">
+              <p class="conversation employerconversation">k, schoenmaat?</p>
+              <a class="timestamp">15:36 3/4/2015</a>
+          </div>
+
+          <div class="userbubble">
+              <button class="button button-positive button-vraag">
+                  Reageer
+              </button>
+          </div>
+
+          <div class="meeting">
+              <a href="#" class="item item-icon-left">
+                  <i class="icon ion-ios7-clock-outline"></i>
+                  <p>U heeft een sollicitatie gesprek!<br>Afspraak op 24 april om 15u30.</p>
+                  <button class="button button-positive bekijkroute">
+                      Bekijk route
+                  </button>
+              </a>
+          </div>
+
+          <div class="rating">
+              <a href="#" class="item item-icon-left">
+                  <i class="icon ion-ios7-star-outline"></i>
+                  <p>Hoe ging de sollicitatie?</p>
+                  <button class="button button-positive bekijkroute">
+                      Geef een score
+                  </button>
+              </a>
+          </div>
+
+
+
+      </ion-content>
+
+
+    </ion-pane>
+  </body>
+</html>
