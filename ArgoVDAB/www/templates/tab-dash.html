@@ -1,9 +1,9 @@
 <ion-view view-title="Dashboard">
   <ion-content ng-controller="ConnectionCtrl">
     <div class="list card">
-            <a class="item item-avatar" href="#/tab/profileDetail" >
-                <img class="avatar" src="img/mcfly.jpg">
-                <div class="leftspace"><h2>Marty McFly</h2>
+            <a class="item item-avatar" href="#/tab/dash/{{profile.id}}" >
+                <img class="avatar" src="../img/mcfly.jpg" ng-src="{{profile.face}}">
+                <div class="leftspace"><h2>{{profile.name}} Marty McFly</h2>
                     <p>Level 1 </p>
                 </div>
             </a>
@@ -17,7 +17,7 @@
 
             <a href="#" class="item item-icon-left">
                 <i class="icon ion-briefcase"></i>
-                <p>Time Traveller (M/F)</p>
+                <p>Time Traveller hh (M/F)</p>
             </a>
 
             <a href="#" class="item item-icon-left">

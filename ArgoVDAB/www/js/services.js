@@ -41,8 +41,9 @@ angular.module('starter.services', [])
     .factory('Profile', function(){
         var profile = [{
             id:0,
-            name: 'Marty myfly',
+            name: 'Marty Mcfly',
             level: 'Level 1',
+            face: '../img/mcfly.jpg',
             adres: {
                 id:0,
                 straat: 'HillDaleStraat 45',
@@ -63,6 +64,17 @@ angular.module('starter.services', [])
             }]
 
         }]
+
+        return {
+            get: function(profileId) {
+                for (var i = 0; i < profile.length; i++) {
+                    if (profile[i].id === parseInt(profileId)) {
+                        return profile[i];
+                    }
+                }
+                return null;
+            }
+        };
     })
 
 .factory('Chats', function() {

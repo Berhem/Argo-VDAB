@@ -13,6 +13,26 @@ var paths = {
 
 gulp.task('default', ['sass']);
 
+gulp.task('add-proxy', function() {
+    return replace({
+        regex: "http://localhost:3000/api/endpoint",
+        replacement: "http://localhost:63342/Argo/branches/Berhem/www/index.html/api",
+        paths: replaceFiles,
+        recursive: false,
+        silent: false
+    });
+})
+
+gulp.task('remove-proxy', function() {
+    return replace({
+        regex: "http://localhost:63342/Argo/branches/Berhem/www/index.html/api",
+        replacement: "http://localhost:3000/api/endpoint",
+        paths: replaceFiles,
+        recursive: false,
+        silent: false
+    });
+})
+
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
     .pipe(sass())
