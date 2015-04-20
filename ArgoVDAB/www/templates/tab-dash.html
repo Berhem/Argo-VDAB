@@ -1,0 +1,36 @@
+<ion-view view-title="Dashboard">
+  <ion-content ng-controller="ConnectionCtrl">
+    <div class="list card">
+            <a class="item item-avatar" href="#/tab/dash/{{profile.id}}" >
+                <img class="avatar" src="../img/mcfly.jpg" ng-src="{{profile.face}}">
+                <div class="leftspace"><h2>{{profile.name}} Marty McFly</h2>
+                    <p>Level 1 </p>
+                </div>
+            </a>
+        </div>
+        <ul class="list">
+            <li class="item">
+                <p>Nieuwe vacatures (<b>3</b>)</p>
+            </li>
+        </ul>
+        <div class="list card">
+
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-briefcase"></i>
+                <p>Time Traveller hh (M/F)</p>
+            </a>
+
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-ios-person"></i>
+                <p>Emmet Brown Industries</p>
+            </a>
+
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-ios-home"></i>
+                <p>6969 Streety McPlace
+                    (34km)</p>
+            </a>
+
+        </div>
+  </ion-content>
+</ion-view>
