@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:6
+-keep class com.ionicframework.argo2820007.CordovaApp { <init>(...); }
+
